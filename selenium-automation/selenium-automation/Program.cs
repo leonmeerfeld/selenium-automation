@@ -13,7 +13,7 @@ namespace selenium_automation
     {
         static void Main(string[] args)
         {
-            string BaseURL = "http://lhk.uni-trier.de/";
+            string baseURL = "http://lhk.uni-trier.de/";
 
             Actions a = new Actions();
             Writer w = new Writer();
@@ -21,6 +21,8 @@ namespace selenium_automation
             w.WriteL("Starting test...", null);
 
             a.startWebdriver();
+
+            a.gotoBaseURL(baseURL);
 
             Console.ReadKey();
         }

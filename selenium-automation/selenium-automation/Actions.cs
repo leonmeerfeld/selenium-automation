@@ -29,5 +29,26 @@ namespace selenium_automation
                 w.WriteL(ex.ToString(), "red");
             }
         }
+
+        //Needs FQDN (like http://www.example.org/) in order to work
+        public void gotoBaseURL(string baseURL)
+        {
+            try
+            {
+                if(driver != null)
+                {
+                    driver.Navigate().GoToUrl(baseURL);
+                    driver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(60));
+                }else
+                {
+                    w.WriteL("Webdriver is not initiated","red");
+                }
+            }
+            catch (Exception ex)
+            {
+                w.WriteL("Failed at going to base URL", "red");
+                w.WriteL(ex.ToString(), "red");
+            }
+        }
     }
 }
