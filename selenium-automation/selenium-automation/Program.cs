@@ -9,12 +9,11 @@ using OpenQA.Selenium.Interactions;
 
 namespace selenium_automation
 {
-    class Program
+    class Program : SiteModels
     {
-        //swag gggggg
         static void Main(string[] args)
         {
-            string baseURL = "http://lhk.uni-trier.de/";
+            string baseURL = "http://www.google.de/";
 
             Actions a = new Actions();
             Writer w = new Writer();
@@ -24,6 +23,9 @@ namespace selenium_automation
             a.startWebdriver();
 
             a.gotoBaseURL(baseURL);
+
+            GoogleSearchBar().SendKeys("selenium automation is fun!");
+            GoogleSearchButton().Click();
 
             Console.ReadKey();
         }

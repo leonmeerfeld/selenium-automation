@@ -13,6 +13,18 @@ namespace selenium_automation
     {
         protected static IWebDriver driver = null;
 
+        public static IWebElement GoogleSearchButton()
+        {
+            driver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(6));
+            return driver.FindElement(By.XPath(".//*[@id='sblsbb']/button"));
+        }
+
+        public static IWebElement GoogleSearchBar()
+        {
+            driver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(6));
+            return driver.FindElement(By.XPath(".//*[@id='lst-ib']"));
+        }
+
         //Login
         public static IWebElement LoginBtn()
         {
