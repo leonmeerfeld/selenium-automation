@@ -11,7 +11,11 @@ namespace selenium_automation
 {
     class Program
     {
+<<<<<<< HEAD
         //tsest
+=======
+        //swag gggggg
+>>>>>>> origin/master
         static void Main(string[] args)
         {
             string baseURL = "http://lhk.uni-trier.de/";
