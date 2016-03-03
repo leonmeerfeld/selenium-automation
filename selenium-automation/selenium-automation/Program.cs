@@ -11,16 +11,11 @@ namespace selenium_automation
 {
     class Program
     {
-<<<<<<< HEAD
-        //tsest
-=======
-        //swag gggggg
->>>>>>> origin/master
         static void Main(string[] args)
         {
-            string baseURL = "http://lhk.uni-trier.de/";
+            string baseURL = "http://www.google.de/";
 
-            Actions a = new Actions();
+            Interactions a = new Interactions();
             Writer w = new Writer();
 
             w.WriteL("Starting test...", null);

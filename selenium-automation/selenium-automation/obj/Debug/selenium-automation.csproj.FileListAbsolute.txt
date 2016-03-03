@@ -1,1 +1,11 @@
 C:\GitHubProjekte\selenium-automation\selenium-automation\selenium-automation\bin\Debug\selenium-automation.exe.config
+C:\Users\meerfeld\Source\Repos\selenium-automation\selenium-automation\selenium-automation\bin\Debug\selenium-automation.exe.config
+C:\Users\meerfeld\Source\Repos\selenium-automation\selenium-automation\selenium-automation\obj\Debug\selenium-automation.exe
+C:\Users\meerfeld\Source\Repos\selenium-automation\selenium-automation\selenium-automation\obj\Debug\selenium-automation.pdb
+C:\Users\meerfeld\Source\Repos\selenium-automation\selenium-automation\selenium-automation\bin\Debug\selenium-automation.exe
+C:\Users\meerfeld\Source\Repos\selenium-automation\selenium-automation\selenium-automation\bin\Debug\selenium-automation.pdb
+C:\Users\meerfeld\Source\Repos\selenium-automation\selenium-automation\selenium-automation\bin\Debug\WebDriver.dll
+C:\Users\meerfeld\Source\Repos\selenium-automation\selenium-automation\selenium-automation\bin\Debug\WebDriver.Support.dll
+C:\Users\meerfeld\Source\Repos\selenium-automation\selenium-automation\selenium-automation\bin\Debug\WebDriver.xml
+C:\Users\meerfeld\Source\Repos\selenium-automation\selenium-automation\selenium-automation\bin\Debug\WebDriver.Support.xml
+C:\Users\meerfeld\Source\Repos\selenium-automation\selenium-automation\selenium-automation\obj\Debug\selenium-automation.csprojResolveAssemblyReference.cache

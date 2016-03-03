@@ -10,7 +10,7 @@ using System.IO;
 
 namespace selenium_automation
 {
-    class Actions : SiteModels
+    class Interactions : SiteModels
     {
         Writer w = new Writer();
 
