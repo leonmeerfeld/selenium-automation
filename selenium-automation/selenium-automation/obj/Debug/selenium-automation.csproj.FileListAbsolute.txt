@@ -1,10 +1,1 @@
 C:\GitHubProjekte\selenium-automation\selenium-automation\selenium-automation\bin\Debug\selenium-automation.exe.config
-C:\GitHubProjekte\selenium-automation\selenium-automation\selenium-automation\bin\Debug\selenium-automation.exe
-C:\GitHubProjekte\selenium-automation\selenium-automation\selenium-automation\bin\Debug\selenium-automation.pdb
-C:\GitHubProjekte\selenium-automation\selenium-automation\selenium-automation\bin\Debug\WebDriver.dll
-C:\GitHubProjekte\selenium-automation\selenium-automation\selenium-automation\bin\Debug\WebDriver.Support.dll
-C:\GitHubProjekte\selenium-automation\selenium-automation\selenium-automation\bin\Debug\WebDriver.xml
-C:\GitHubProjekte\selenium-automation\selenium-automation\selenium-automation\bin\Debug\WebDriver.Support.xml
-C:\GitHubProjekte\selenium-automation\selenium-automation\selenium-automation\obj\Debug\selenium-automation.csprojResolveAssemblyReference.cache
-C:\GitHubProjekte\selenium-automation\selenium-automation\selenium-automation\obj\Debug\selenium-automation.exe
-C:\GitHubProjekte\selenium-automation\selenium-automation\selenium-automation\obj\Debug\selenium-automation.pdb
