@@ -14,7 +14,7 @@ namespace selenium_automation
     {
         Writer w = new Writer();
 
-        //Checks is an element is displayed on the current page.
+        //Checks if an element is displayed on the current page.
         public bool elementPresentByXpath(string xpath)
         {
             if(driver.FindElements(By.XPath(xpath)).Count > 0)

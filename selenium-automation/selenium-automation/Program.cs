@@ -27,9 +27,18 @@ namespace selenium_automation
                 // ~ Write tests here ~
 
 
-
-                //Use this condition to verify that the test has reached an element(or XPath).
+              
+                //You can use this condition to verify that the test has reached an element(or XPath).     
                 if (i.elementPresentByXpath(".//*[@id='tsf']/div[2]/div[3]/center/input[1]"))
+                {
+                    w.WriteL("Test completed.", "green");
+                }else
+                {
+                    w.WriteL("Test not completed.", "red");
+                }
+
+                //Or this one if you want to search for a string.
+                if(LoginBtn().Text == "This is the string im searching for in the prior element.")
                 {
                     w.WriteL("Test completed.", "green");
                 }else

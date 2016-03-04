@@ -19,7 +19,7 @@ namespace selenium_automation
         public static IWebElement LoginBtn()
         {
             driver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(10));
-            return driver.FindElement(By.XPath(".//*[@id='tsf']/div[2]/div[3]/center/input[1]"));
+            return driver.FindElement(By.XPath("html/body/div[3]/h1"));
         }
 
         //This one CssSelector.
