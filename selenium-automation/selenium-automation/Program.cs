@@ -9,22 +9,41 @@ using OpenQA.Selenium.Interactions;
 
 namespace selenium_automation
 {
-    class Program
+    class Program : SiteModels
     {
         static void Main(string[] args)
         {
-            string baseURL = "http://www.google.de/";
+            string baseURL = "http://lhk.uni-trier.de/";
 
-            Interactions a = new Interactions();
+            Interactions i = new Interactions();
             Writer w = new Writer();
 
             w.WriteL("Starting test...", null);
 
-            a.startWebdriver();
+            try
+            {
+                i.startWebdriver();
+                i.gotoBaseURL(baseURL);
+                // ~ Write tests here ~
 
-            a.gotoBaseURL(baseURL);
+
+
+                // Use this condition to verify that the test has reached an element(or XPath).
+                if (i.elementPresentByXpath(".//*[@id='tsf']/div[2]/div[3]/center/input[1]"))
+                {
+                    w.WriteL("Test completed.", "green");
+                }else
+                {
+                    w.WriteL("Test not completed.", "red");
+                }
+            }
+            catch (Exception ex)
+            {
+                w.WriteL(ex.ToString(), "red");
+            }
 
             Console.ReadKey();
+            driver.Close();
         }
     }
 }

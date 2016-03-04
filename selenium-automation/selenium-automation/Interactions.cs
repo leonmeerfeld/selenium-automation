@@ -14,23 +14,38 @@ namespace selenium_automation
     {
         Writer w = new Writer();
 
+        //Checks is an element is displayed on the current page.
+        public bool elementPresentByXpath(string xpath)
+        {
+            if(driver.FindElements(By.XPath(xpath)).Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        //Starts the webdriver, Firefox and maximizes the browser window.
         public void startWebdriver()
         {
             try
             {
-                w.WriteL("Starting Webdriver...", null);
+                w.WriteL("Starting webdriver...", null);
 
                 driver = new FirefoxDriver();
                 driver.Manage().Window.Maximize();
             }
             catch (Exception ex)
             {
-                w.WriteL("Failed at starting Webdriver", "red");
+                w.WriteL("Failed at starting Webdriver.", "red");
                 w.WriteL(ex.ToString(), "red");
             }
         }
 
-        //Needs FQDN (like http://www.example.org/) in order to work
+        //Goes to a Domain.
+        //Needs FQDN (like http://www.example.org/) in order to work.
         public void gotoBaseURL(string baseURL)
         {
             try
@@ -41,13 +56,12 @@ namespace selenium_automation
                     driver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(60));
                 }else
                 {
-                    w.WriteL("Webdriver is not initiated","red");
+                    w.WriteL("Webdriver is not initiated.","red");
                 }
             }
             catch (Exception ex)
             {
-                w.WriteL("Failed at going to base URL", "red");
-                w.WriteL(ex.ToString(), "red");
+                w.WriteL("Failed at going to base URL.", "red");
             }
         }
     }
