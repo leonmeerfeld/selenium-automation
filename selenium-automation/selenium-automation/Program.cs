@@ -28,7 +28,7 @@ namespace selenium_automation
 
 
 
-                // Use this condition to verify that the test has reached an element(or XPath).
+                //Use this condition to verify that the test has reached an element(or XPath).
                 if (i.elementPresentByXpath(".//*[@id='tsf']/div[2]/div[3]/center/input[1]"))
                 {
                     w.WriteL("Test completed.", "green");
