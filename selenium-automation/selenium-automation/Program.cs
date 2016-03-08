@@ -13,7 +13,7 @@ namespace selenium_automation
     {
         static void Main(string[] args)
         {
-            string baseURL = "http://lhk.uni-trier.de/";
+            string baseURL = "http://www.google.com/";
 
             Interactions i = new Interactions();
             Writer w = new Writer();
@@ -24,6 +24,7 @@ namespace selenium_automation
             {
                 i.startWebdriver();
                 i.gotoBaseURL(baseURL);
+
                 // ~ Write tests here ~
 
                 /*
@@ -31,6 +32,7 @@ namespace selenium_automation
                 //use this to let the webdriver wait:
                  
                 driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
+                or System.Threading.Thread.Sleep(500);
 
                 //You can use this condition to verify that the test has reached an element(using XPath) 
                 //that the determines the outcome of the test.
@@ -53,6 +55,11 @@ namespace selenium_automation
                     w.WriteL("Test not completed.", "red");
                 }
                 */
+
+                //Saves a screenshot in the location of the executable:
+                Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
+                string screenshot_name = System.AppDomain.CurrentDomain.BaseDirectory + "Screenshot " + DateTime.Now.ToString().Replace(":", ".") + ".png";
+                ss.SaveAsFile(screenshot_name, System.Drawing.Imaging.ImageFormat.Png);
             }
             catch (Exception ex)
             {

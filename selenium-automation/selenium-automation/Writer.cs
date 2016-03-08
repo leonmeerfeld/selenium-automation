@@ -10,6 +10,10 @@ namespace selenium_automation
     {
         public void WriteL(string text, string color)
         {
+            //Appends every text that gets parsed through this class to a logfile.
+            Log l = new Log();
+            l.AppendToLogFile(text);
+
             if( ! String.IsNullOrEmpty(color))
             {
                 switch (color.ToLower())
