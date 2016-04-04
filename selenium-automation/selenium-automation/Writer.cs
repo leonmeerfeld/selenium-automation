@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace selenium_automation
 {
+    /// <summary>
+    /// Contains method that writes text into the console.
+    /// </summary>
     class Writer
     {
+        /// <summary>
+        /// Method that writes text into the console with given color.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="color"></param>
         public void WriteL(string text, string color)
         {
             //Appends every text that gets parsed through this class to a logfile.

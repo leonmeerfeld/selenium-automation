@@ -7,6 +7,9 @@ using System.IO;
 
 namespace selenium_automation
 {
+    /// <summary>
+    /// Logs everything that gets passed through the Writer class into a text file.
+    /// </summary>
     class Log
     {
         static bool file_created = false;

@@ -9,6 +9,9 @@ using OpenQA.Selenium.Interactions;
 
 namespace selenium_automation
 {
+    /// <summary>
+    /// Main class that runs the Program.
+    /// </summary>
     class Program : SiteModels
     {
         static void Main(string[] args)

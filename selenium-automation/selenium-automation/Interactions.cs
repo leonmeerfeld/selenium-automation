@@ -10,6 +10,9 @@ using System.IO;
 
 namespace selenium_automation
 {
+    /// <summary>
+    /// Stores methods for more complicated interactions with a site.
+    /// </summary>
     class Interactions : SiteModels
     {
         Writer w = new Writer();
@@ -27,7 +30,9 @@ namespace selenium_automation
             }
         }
 
-        //Starts the webdriver, Firefox and maximizes the browser window.
+        /// <summary>
+        /// Starts the webdriver, Firefox and maximizes the browser window.
+        /// </summary>
         public void startWebdriver()
         {
             try
@@ -44,8 +49,10 @@ namespace selenium_automation
             }
         }
 
-        //Goes to a Domain.
-        //Needs FQDN (like http://www.example.org/) in order to work.
+        /// <summary>
+        /// Goes to a Domain. Needs FQDN in order to work.
+        /// </summary>
+        /// <param name="baseURL"></param>
         public void gotoBaseURL(string baseURL)
         {
             try

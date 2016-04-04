@@ -9,6 +9,9 @@ using OpenQA.Selenium.Interactions;
 
 namespace selenium_automation
 {
+    /// <summary>
+    /// Stores elements from websites as WebElements.
+    /// </summary>
     class SiteModels
     {
         //This class is used to store elements.
@@ -22,7 +25,7 @@ namespace selenium_automation
             return driver.FindElement(By.XPath("html/body/div[3]/h1"));
         }
 
-        //This one CssSelector.
+        //This one uses CssSelector to find the element.
         public static IWebElement UsernameText()
         {
             driver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(10));
