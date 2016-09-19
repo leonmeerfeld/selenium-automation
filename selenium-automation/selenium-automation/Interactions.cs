@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
 using System.IO;
 
@@ -39,7 +39,7 @@ namespace selenium_automation
             {
                 w.WriteL("Starting webdriver...", null);
 
-                driver = new FirefoxDriver();
+                driver = new ChromeDriver(@"C:\\");
                 driver.Manage().Window.Maximize();
             }
             catch (Exception ex)

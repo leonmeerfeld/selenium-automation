@@ -27,6 +27,8 @@ namespace selenium_automation
             {
                 i.startWebdriver();
                 i.gotoBaseURL(baseURL);
+                googleTextbox().SendKeys("Selenium");
+                googleSubmit().Click();
 
                 // ~ Write tests here ~
 
