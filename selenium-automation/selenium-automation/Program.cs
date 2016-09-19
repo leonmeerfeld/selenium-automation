@@ -46,12 +46,6 @@ namespace selenium_automation
             try
             {
                 i.startWebdriver();
-<<<<<<< HEAD
-                i.gotoBaseURL(baseURL);
-                googleTextbox().SendKeys("Selenium");
-                googleSubmit().Click();
-=======
->>>>>>> origin/master
 
                 stopwatch.Start();
 
