@@ -17,13 +17,21 @@ namespace selenium_automation {
     class Interactions : SiteModels {
         Writer w = new Writer();
 
-        //Check in Config if line is a Header
-        //Returns true if Lines start with #
-        private bool isheader(string line) {
+        /// <summary>
+        /// Check in Config if line is a Header
+        /// Returns true if Lines start with #
+        /// </summary>
+        /// <param name="line"></param>
+        /// <returns></returns>
+        private bool isHeader(string line) {
             return line.Substring(0, 1) == "#";
             }
 
-        //Change Configuration
+        /// <summary>
+        /// Change Configuration
+        /// </summary>
+        /// <param name="configitem"></param>
+        /// <returns></returns>
         public string readConfig(String configitem) {
             //Directorypath
             string path = Directory.GetCurrentDirectory() + "\\config.txt";
@@ -42,7 +50,7 @@ namespace selenium_automation {
                 if ((configLines[i] == configitem)) {
                     i++;
                     int m = i;
-                    while ((configLines.Length != m) && !isheader(configLines[m])) {
+                    while ((configLines.Length != m) && !isHeader(configLines[m])) {
                         configItemvalue += configLines[m];
                         m++;
                         }
