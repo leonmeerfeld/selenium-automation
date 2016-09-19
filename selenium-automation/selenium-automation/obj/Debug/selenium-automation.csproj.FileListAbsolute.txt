@@ -9,3 +9,33 @@ C:\Users\meerfeld\Source\Repos\selenium-automation\selenium-automation\selenium-
 C:\Users\meerfeld\Source\Repos\selenium-automation\selenium-automation\selenium-automation\bin\Debug\WebDriver.xml
 C:\Users\meerfeld\Source\Repos\selenium-automation\selenium-automation\selenium-automation\bin\Debug\WebDriver.Support.xml
 C:\Users\meerfeld\Source\Repos\selenium-automation\selenium-automation\selenium-automation\obj\Debug\selenium-automation.csprojResolveAssemblyReference.cache
+X:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\selenium-automation.exe.config
+X:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\obj\Debug\selenium-automation.exe
+X:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\obj\Debug\selenium-automation.pdb
+X:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\selenium-automation.exe
+X:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\selenium-automation.pdb
+X:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\WebDriver.dll
+X:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\WebDriver.Support.dll
+X:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\WebDriver.xml
+X:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\WebDriver.Support.xml
+X:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\obj\Debug\selenium-automation.csprojResolveAssemblyReference.cache
+Z:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\selenium-automation.exe.config
+Z:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\obj\Debug\selenium-automation.exe
+Z:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\obj\Debug\selenium-automation.pdb
+Z:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\selenium-automation.exe
+Z:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\selenium-automation.pdb
+Z:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\WebDriver.dll
+Z:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\WebDriver.Support.dll
+Z:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\WebDriver.xml
+Z:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\WebDriver.Support.xml
+Z:\Azubi-Praktikanten Projekte\Leon Meerfeld\Porta Tests\Selenium Unterlagen\selenium-automation\selenium-automation\obj\Debug\selenium-automation.csprojResolveAssemblyReference.cache
+E:\Daten\Selenium Unterlagen\selenium-automation\selenium-automation\obj\Debug\selenium-automation.exe
+E:\Daten\Selenium Unterlagen\selenium-automation\selenium-automation\obj\Debug\selenium-automation.pdb
+E:\Daten\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\selenium-automation.exe
+E:\Daten\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\selenium-automation.pdb
+E:\Daten\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\WebDriver.dll
+E:\Daten\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\WebDriver.Support.dll
+E:\Daten\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\WebDriver.xml
+E:\Daten\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\WebDriver.Support.xml
+E:\Daten\Selenium Unterlagen\selenium-automation\selenium-automation\obj\Debug\selenium-automation.csprojResolveAssemblyReference.cache
+E:\Daten\Selenium Unterlagen\selenium-automation\selenium-automation\bin\Debug\selenium-automation.exe.config
