@@ -7,14 +7,11 @@ using System.IO;
 
 namespace selenium_automation
 {
-    /// <summary>
-    /// Logs everything that gets passed through the Writer class into a text file.
-    /// </summary>
     class Log
     {
         static bool file_created = false;
 
-        static string file_name = "Porta log " + DateTime.Now.ToString().Replace(":", ".") + ".autolog";
+        static string file_name = "porta-test-2 " + DateTime.Now.ToString().Replace(":", ".") + ".autolog";
         static string directory = System.AppDomain.CurrentDomain.BaseDirectory;
 
         public void AppendToLogFile(string text_to_append)
@@ -22,7 +19,7 @@ namespace selenium_automation
             if (!file_created)
             {
                 file_created = true;
-                File.WriteAllText(directory + file_name, "Test process:" + Environment.NewLine);
+                File.WriteAllText(directory + file_name, "Test Fortschritt:" + Environment.NewLine);
             }
 
             using (StreamWriter file = new StreamWriter(directory + file_name, true))

@@ -4,32 +4,73 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.UI;
 
 namespace selenium_automation
 {
-    /// <summary>
-    /// Stores elements from websites as WebElements.
-    /// </summary>
     class SiteModels
     {
-        //This class is used to store elements.
-
         protected static IWebDriver driver = null;
 
-        //This one uses XPath to find the element.
-        public static IWebElement LoginBtn()
+        public static IWebElement WaitForElementToBePresent(By byParam, int seconds)
         {
-            driver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(10));
-            return driver.FindElement(By.XPath("html/body/div[3]/h1"));
+            IWebElement element = null;
+
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
+
+            for (int i = 0; i < 3; i++)
+            {
+                wait.Until(x => x.FindElement(byParam));
+                wait.Until(ExpectedConditions.ElementToBeClickable(byParam));
+                wait.Until(ExpectedConditions.ElementIsVisible(byParam));
+                element = driver.FindElement(byParam);
+            }
+            return element;
         }
 
-        //This one uses CssSelector to find the element.
-        public static IWebElement UsernameText()
+        /// <summary>
+        /// Gibt IList<IWebElement> zurück wenn die Elemente Sichtbar, Klickbar und present sind.
+        /// </summary>
+        /// <param name="byParam"></param>
+        /// <param name="seconds"></param>
+        /// <returns></returns>
+        public static IList<IWebElement> WaitForElementsToBePresent(By byParam, int seconds)
         {
-            driver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(10));
-            return driver.FindElement(By.CssSelector("input[id='username']"));
+            IList<IWebElement> elements = null;
+
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
+
+            for (int i = 0; i < 3; i++)
+            {
+                wait.Until(ExpectedConditions.ElementIsVisible(byParam));
+                wait.Until(ExpectedConditions.ElementToBeClickable(byParam));
+                wait.Until(x => x.FindElements(byParam));
+                elements = driver.FindElements(byParam);
+            }
+
+            return elements;
+        }
+
+        //Login
+        public static IWebElement UsernameInput()
+        {
+            return WaitForElementToBePresent(By.CssSelector("input[class='input_login_hisinone'][title='Benutzerkennung']"), 20);
+        }
+
+        public static IWebElement PasswordInput()
+        {
+            return WaitForElementToBePresent(By.CssSelector("input[class='input_login_hisinone'][title='Passwort']"), 20);
+        }
+
+        public static IWebElement LoginButton()
+        {
+            return WaitForElementToBePresent(By.CssSelector("button[class='submit_login'][alt='Anmelden']"), 20);
+        }
+
+        public static IWebElement confirmLoginInput()
+        {
+            return WaitForElementToBePresent(By.XPath(".//*[@id='collapsibleHeaderActionFrom:rolesInput']"), 20);
         }
     }
 }
